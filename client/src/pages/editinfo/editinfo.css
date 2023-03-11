@@ -1,0 +1,141 @@
+.editInfoWrapper {
+    width: 60%;
+    margin: 40px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.editInfoContainer {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.editInfoHeader {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.editInfoOptionHeader {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.editInfoOptionHeader {
+    margin-bottom: 10px;
+}
+
+.editInfoBox {
+    padding: 20px;
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 10px;
+    width: 90%;
+}
+
+.editInfoOption:nth-child(1) {
+    margin-top: 0;
+}
+
+.editInfoOption {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.editInfoHr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;             
+    background-color: rgb(221, 212, 212);
+    height: 1px;
+}
+
+.doneButtonContainer {
+    width: 100%;
+}
+
+.doneButtonContainer > button {
+    width: 70px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    border: 1px solid rgb(170, 164, 164);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.doneButtonContainer > button:hover {
+    background: linear-gradient(to bottom,#f7d891,#f5bb27);
+}
+
+.editInfoOptionButtonContainer > button {
+    width: 70px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid rgb(189, 184, 184);
+    background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+    opacity: 0.9;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    right: 25%;
+}
+
+.editInfoOptionButtonContainer > button:hover {
+    opacity: 1;
+}
+
+.editInfoOptionButtonContainer > button:active {
+    transform: translateY(5px);
+}
+
+.editInfoOptionHeaderLine1 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.editInfoOptionHeaderLine2 {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width:200px) and (max-width:700px) {
+    .editInfoWrapper {
+        width: 90%
+    }
+
+    .editInfoOptionButtonContainer > button {
+        width: 50px;
+        height: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        position: absolute;
+        right: 10%;
+    }
+}
+
+@media only screen and (min-width:701px) and (max-width: 1200px) {
+    .editInfoWrapper {
+        width: 90%
+    }
+
+    .editInfoOptionButtonContainer > button {
+        width: 50px;
+        height: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        position: absolute;
+        right: 15%;
+    }
+}

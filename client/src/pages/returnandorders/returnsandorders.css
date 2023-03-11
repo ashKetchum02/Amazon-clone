@@ -1,0 +1,407 @@
+.returnsAndOrdersWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.returnsAndOrdersTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.returnsAndOrdersTitleLeft {
+    width: 50%;
+}
+
+.returnsAndOrdersTitleLeft p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.returnsAndOrdersTitleRight .returnsAndOrdersSearchBoxContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.returnsAndOrdersSearchBox {
+    width: 400px;
+    height: 30px;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.returnsAndOrdersSearchButton {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background-color: gold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.returnsAndOrdersSearchButton:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.returnsAndOrdersSearchButton:active {
+    transform: translateY(5px);
+}
+
+.returnsAndOrdersNav {
+    border-bottom: 1px solid darkgrey;
+}
+
+.returnsAndOrdersNav ul {
+    list-style-type: none;
+    background-color: white;
+    display: flex;
+}
+
+.returnsAndOrdersNav ul li {
+    color: teal;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.returnsAndOrdersNav ul li:hover {
+    border-bottom: 5px solid #FEBD69;
+    cursor: pointer;
+}
+
+.selectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.selectContainer .text {
+    margin-right: 20px;
+}
+
+#history {
+    width: 120px;
+}
+
+.orderContainer {   
+    display: flex;
+    flex: column;
+    border-radius: 10px;
+    border: 1px solid rgb(189, 185, 185);
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.orderHeader {
+    padding: 20px;
+    background-color: rgb(241, 240, 240);
+    border-radius: 10px;
+    width: 100%;
+    border-bottom: 1px solid rgb(189, 185, 185);
+}
+
+.orderHeaderLine1 {
+    display: flex;
+    flex-direction: row;
+    color: rgb(143, 141, 141);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.orderHeaderLine2 {
+    display: flex;
+    flex-direction: row;
+    color: rgb(102, 100, 100);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.orderLastOption {
+    position: absolute;
+    right: 300px;
+}
+
+.orderOption {
+    margin: 0 20px;
+    width: 120px
+}
+
+.returnsAndOrdersProductsContainerWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.ordersContainerWrapper {
+    display: flex;
+    flex-direction: column;
+}   
+
+.returnsAndOrdersProductsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+
+.returnsAndOrdersProductContainer {
+    display: flex;
+    border-bottom: 1px solid rgb(189, 185, 185);
+    margin-bottom: 20px;
+}
+
+.returnsAndOrdersProductImage {
+    width: 120px;
+    height: 120px;
+}
+
+.returnsAndOrdersProductImage > img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.archive {
+    color: teal
+}
+
+.returnsAndOrdersProductNameContainer {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.returnsAndOrdersProductName {
+    width: 600px;
+}
+
+.reviewButton {
+    margin-left: 20px;
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid darkgray;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reviewButton:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.reviewButton:active {
+    transform: translateY(5px);
+}
+
+@media only screen and (min-width:200px) and (max-width: 700px) {
+    .returnsAndOrdersWrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .returnsAndOrdersTitleContainer {
+        flex-wrap: wrap;
+    }
+
+    .returnsAndOrdersTitleRight .returnsAndOrdersSearchBoxContainer {
+        flex-wrap: wrap;
+    }
+
+    .returnsAndOrdersSearchBox {
+        width: 90%;
+        margin-bottom: 10px;
+        font-size: 0.75rem;
+    }
+
+    .returnsAndOrdersSearchButton {
+        margin-left: 0px;
+    }
+
+    .returnsAndOrdersNav ul {
+        padding: 0;
+    }
+
+    .returnsAndOrdersNav ul li {
+        color: teal;
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 10px;
+        width: max-content;
+    }
+
+    .returnsAndOrdersNav ul li:nth-child(4) {
+        display: none;
+    }
+
+    .returnsAndOrdersNav ul li:nth-child(5) {
+        display: none;
+    }
+
+    .orderContainer {   
+        max-width: 98%;
+    }
+
+    .orderHeader {
+        padding: 10px;
+        width: 94.5%;
+        font-size: 0.75rem;
+    }
+
+    .orderHeaderLine1 {
+        flex-wrap: wrap;
+        font-size: 0.75rem;
+    }
+
+    .orderHeaderLine2 {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        font-size: 0.75rem;
+    }
+
+    .orderLastOption {
+        display: none;
+    }
+
+    .returnsAndOrdersProductImage > img {
+        max-width: 80px;
+        max-height: 80px;
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    .returnsAndOrdersProductName {
+        width: 92%;
+        font-size: 0.75rem;
+    }
+
+    .reviewButton {
+        display: none;
+    }
+
+    .returnsAndOrdersProductImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .returnsAndOrdersTitleLeft {
+        width: 92%;
+    }
+
+    .returnsAndOrdersTitleRight {
+        width: 92%;
+    }
+}
+
+@media only screen and (min-width:701px) and (max-width: 1200px) {
+    .reviewButton {
+        display: none;
+    }
+
+    .returnsAndOrdersWrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .returnsAndOrdersTitleContainer {
+        flex-wrap: wrap;
+    }
+
+    .returnsAndOrdersTitleRight .returnsAndOrdersSearchBoxContainer {
+        flex-wrap: wrap;
+    }
+
+    .returnsAndOrdersSearchBox {
+        width: 90%;
+        margin-bottom: 10px;
+        font-size: 0.75rem;
+    }
+
+    .returnsAndOrdersSearchButton {
+        margin-left: 0px;
+    }
+
+    .returnsAndOrdersNav ul {
+        padding: 0;
+    }
+
+    .returnsAndOrdersNav ul li {
+        color: teal;
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 10px;
+        width: max-content;
+    }
+
+    .returnsAndOrdersNav ul li:nth-child(4) {
+        display: none;
+    }
+
+    .returnsAndOrdersNav ul li:nth-child(5) {
+        display: none;
+    }
+
+    .orderContainer {   
+        max-width: 98%;
+    }
+
+    .orderHeader {
+        padding: 10px;
+        width: 98%;
+        font-size: 0.75rem;
+    }
+
+    .orderHeaderLine1 {
+        flex-wrap: wrap;
+        font-size: 0.75rem;
+    }
+
+    .orderHeaderLine2 {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        font-size: 0.75rem;
+    }
+
+    .orderLastOption {
+       right: 100px
+    }
+
+    .returnsAndOrdersProductImage > img {
+        max-width: 80px;
+        max-height: 80px;
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    .returnsAndOrdersProductName {
+        width: 92%;
+        font-size: 0.75rem;
+    }
+
+    .reviewButton {
+        display: none;
+    }
+
+    .returnsAndOrdersProductImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .returnsAndOrdersTitleLeft {
+        width: 92%;
+    }
+
+    .returnsAndOrdersTitleRight {
+        width: 92%;
+    }
+}

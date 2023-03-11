@@ -1,0 +1,178 @@
+
+.yourAccountWrapper {
+    margin-left: 70px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-right: 70px;
+}
+
+.yourAccountHeader > p {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.yourAccountOptionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.yourAccountOption {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(202, 195, 195);
+    padding: 20px;
+    border-radius: 10px;
+    width: 330px;
+    height: 70px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.yourAccountOption:hover {
+   background-color: rgb(240, 235, 235);
+}
+
+.yourAccountOptionImage {
+    margin-right: 10px;
+}
+
+.yourAccountOptionImage > img {
+    max-width: 80px;
+    min-height: 50px;
+}
+
+.yourAccountOptionInfoLine2 {
+    font-size: 14px;
+    color: rgb(70, 68, 68);
+    margin-top: 5px;
+}
+
+.yourAccountHr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;             
+    background-color:rgb(211, 208, 208);
+    height: 1px;
+}
+
+.yourAccountFooter {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.footerOptionContainer1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerOptionContainer1 .footerOption {
+    border-radius: 10px;
+    border: 1px solid rgb(212, 206, 206);
+    padding: 20px;
+    width: 320px;
+    height: 200px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+.footerOptionLinks ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+    color: rgb(17, 133, 133);
+    font-weight: 500;
+    line-height: 1.9;
+}
+
+.footerOptionLinks ul li:hover {
+    text-decoration: underline;
+    color: rgb(248, 134, 4);
+    cursor: pointer
+}
+
+.footerOptionHeader {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footerOptionContainer2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerOptionContainer2 .footerOption {
+    border-radius: 10px;
+    border: 1px solid rgb(212, 206, 206);
+    padding: 20px;
+    width: 320px;
+    height: 120px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width:200px) and (max-width: 700px) { 
+
+    .yourAccountWrapper {
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-right: 20px;
+        width: 92%;
+        font-size: 0.5rem;
+    }
+
+    .yourAccountOptionsContainer {
+        width: 100%;
+    }
+
+    .yourAccountOption {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid rgb(202, 195, 195);
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        height: auto;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footerOptionContainer1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footerOptionContainer2 {
+        flex-wrap: wrap;
+    }
+
+    .footerOptionContainer1 .footerOption {
+        padding: 20px;
+        width: 92%;
+        height: auto;
+        margin-right: 60px;
+        margin-bottom: 30px;
+    }
+
+    .footerOptionContainer2 .footerOption {
+        padding: 20px;
+        width: 92%;
+        height: auto;
+        margin-right: 60px;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (min-width:701px) and (max-width: 1200px) { 
+    .yourAccountOption {
+        min-width: 80%;
+    }
+}

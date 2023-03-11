@@ -1,0 +1,246 @@
+.navContainer {
+    display: flex;
+    background-color: #131921;
+    color: white;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.hamburger {
+    display: none;
+}
+
+.logoContainer {
+    display: flex;
+}
+
+.logoContainer:hover {
+    border-bottom: 5px solid white;
+}
+
+.logoContainer span {
+    position: relative;
+    top: 3px;
+    font-size: 15px;
+}
+
+.logo {
+    width: 100px;
+    object-fit: contain;
+    margin-top: 18px;
+}
+/* 
+.locationIcon {
+
+} */
+
+.helloSelectYourAddress {
+    display: flex;
+    position: relative;
+    top: 8px;
+}
+
+.headerOptionLineOne {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+    bottom: 6px;
+}
+
+.headerOptionLineTwo {
+    display: block;
+    position: relative;
+    bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.searchContainer {
+    display: flex;
+    width: 45%;
+}
+
+.dropDownButton {
+    width: 60px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    font-size: 12px;
+    color: rgb(95, 92, 92);
+    background-color: rgb(228, 220, 220);
+    cursor: pointer;
+}
+
+
+.searchInput {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.searchInput:focus {
+    outline: none;
+    border: 3px solid #FEBD69;
+}
+
+.searchButton {
+    height: 40px;
+    width: 50px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #FEBD69;
+    cursor: pointer;
+}
+
+.searchIcon {
+    position: relative;
+    top: 3px;
+}
+
+.headerOption {
+    position: relative;
+    top: 9px;
+}
+
+.cartNumber {
+    position: relative;
+    bottom: 23px;
+    right: 18px;
+    color: #FEBD69;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.accountDropDownArrowIcon {
+    position: relative;
+    bottom: 12px;
+}
+
+.headerOption2 {
+    display: flex;
+}
+
+.cartContainer {
+    position: relative;
+    top: 5px;
+}
+
+.cartContainer:hover {
+    border-bottom: 5px solid white;
+}
+
+.cartContainer .headerOptionLineTwo {
+    position: relative;
+    right: 14px;
+    top: 5px;
+}
+
+.returnsAndOrdersLogoContainer {
+    cursor: pointer;
+}
+ 
+.returnsAndOrdersLogoContainer:hover {
+    border-bottom: 5px solid white;
+}
+
+.yourAccountLinkContainer:hover {
+    cursor: pointer;
+    border-bottom: 5px solid white;
+}
+
+.helloSelectYourAddress:hover {
+    cursor: pointer;
+    border-bottom: 5px solid white;
+}
+
+@media only screen and (min-width:200px) and (max-width: 1200px) {
+    .drop {
+        display: none;
+    }
+
+    .logoContainer {
+        margin-left: 5%
+    }
+    
+    .hamburger {
+        display: inline-block;
+        margin-left: 50%;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    .navContainer {
+        height: auto;
+    }
+
+    .searchContainer {
+        width: 100%;
+    }
+
+    .navContainer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .helloSelectYourAddress {
+        margin: 10px 0;
+    }
+
+    .cartContainer {
+        margin: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    .yourAccountLinkContainer {
+        margin-top: 10px;
+    }
+    
+    .returnsAndOrdersLogoContainer {
+        margin-bottom: 17px;
+    }
+
+    .cartNumber {
+        margin-bottom: 10px;
+    }
+
+    .logoContainer:hover {
+        border-bottom: none;
+    }
+
+    .cartContainer:hover {
+        border-bottom: none;
+    }
+
+    .returnsAndOrdersLogoContainer:hover {
+        border-bottom: none;
+    }
+
+    .yourAccountLinkContainer:hover {
+        border-bottom: none;
+    }
+
+    .helloSelectYourAddress:hover {
+        border-bottom: none;
+    }
+}
+
+.blockDisplay {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}

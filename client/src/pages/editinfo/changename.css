@@ -1,0 +1,107 @@
+.changeNameWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.changeNameContainer {
+    width: 50%;
+    margin-top: 5px;
+}
+
+.changeNameHeader {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.changeNameBox {
+    border: 1px solid rgb(196, 189, 189);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.changeNameInfo {
+    font-size: 13px;
+    color: rgb(61, 59, 59);
+    margin-bottom: 10px;
+}
+
+.changeNameInputContainer > div {
+    font-weight: 650;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.changeNameInputContainer > input {
+    margin-bottom: 20px;
+    width: 25%;
+}
+
+.changeNameInputContainer > button {
+    font-size: 14px;
+    font-weight: 500;
+    width: 17%;
+    height: 34px;
+    border: 1px solid rgb(172, 170, 170);
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 17px;
+    border-radius: 4px;
+}
+
+.changeNameInputContainer > button:hover {
+    background: linear-gradient(to bottom,#f7d891,#f5bb27);
+}
+.changeMobileNav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.changeMobileNavLink {
+    margin-left: 10px;
+    color: #0066c0;
+    cursor: pointer;
+}
+
+.changeMobileNavLink:hover {
+    text-decoration: underline;
+    color: #c45500!important;
+}
+
+.changeMobileNavLink:last-child {
+    color: #c45500!important;
+    cursor: initial;
+}
+
+.changeMobileNavLink:last-child:hover {
+    text-decoration: none;
+}
+
+@media only screen and (min-width:200px) and (max-width:700px) {
+    .changeNameContainer {
+        width: 80%;
+    }
+
+    .changeNameInputContainer > button {
+        width: 50%;
+    }
+
+    .changeNameInputContainer > input {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:701px) and (max-width: 1200px) {
+    .changeNameContainer {
+        width: 60%;
+    }
+
+    .changeNameInputContainer > button {
+        width: 25%;
+    }
+}

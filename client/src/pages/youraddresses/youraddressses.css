@@ -1,0 +1,133 @@
+.yourAddressesWrapper {
+    margin-left: 10%
+}
+
+.yourAddressesTitle {
+    font-size: 28px;
+    font-weight: 520;
+    margin-bottom: 20px;
+}
+
+.yourAddressesContainer {
+    display: flex;
+}
+
+.newAddress {
+    width: 260px;
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px dashed black;
+    padding: 30px;
+    height: 230px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.oneAddress {
+    width: 260px;
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid rgb(145, 139, 139);
+    padding: 30px;
+    height: 230px;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.oneAddress .addressInfo {
+    margin-top: 10px;
+}
+
+.oneAddress .addressButtons {
+    margin-top: 10px;
+}
+
+.oneAddress .addressButtons a {
+    margin-right: 20px;
+}
+
+.changeMobileNav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.changeMobileNavLink {
+    margin-left: 10px;
+    color: #0066c0;
+    cursor: pointer;
+}
+
+.changeMobileNavLink:hover {
+    text-decoration: underline;
+    color: #c45500!important;
+}
+
+.changeMobileNavLink:last-child {
+    color: #c45500!important;
+    cursor: initial;
+}
+
+.changeMobileNavLink:last-child:hover {
+    text-decoration: none;
+}
+
+@media only screen and (min-width:300px) and (max-width: 700px) {
+    .yourAddressesContainer {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+    .oneAddress {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .newAddress {
+        width: 70%;
+        min-width: 92%;
+        max-width: 92%;
+        margin: 10px;
+        padding: 8.5%;
+        display: flex;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .yourAddressesWrapper {
+        margin-left: 5%;
+    }
+    
+    .yourAddressesTitle {
+        font-size: 24px;
+        font-weight: 520;
+        margin-bottom: 20px;
+    }
+
+    .increaseWidth {
+        width: 90%;
+        max-width: 90%;
+        min-width: 90%;
+        margin-left: 0;
+        position: relative;
+        right: 8px;
+    }
+
+    .yourAddressesWrapper {
+        width: 92%;
+    }
+
+    .alsoBuyContainer {
+        width: 92%;
+    }
+}

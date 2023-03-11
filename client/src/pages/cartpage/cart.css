@@ -1,0 +1,421 @@
+.wrapper {
+    background-color: rgb(234, 237, 237);
+}
+
+.cartContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.leftContainer {
+    margin: 20px;
+    margin-right: 10px;
+    width: 70%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 0 2px lightgray;
+    padding: 20px;
+    min-height: 30vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rightContainer {
+    padding: 20px;
+    width: 20%;
+    margin: 20px;
+    background-color: white;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.emptyImage {
+    width: 370px;
+}
+
+.emptyCart {
+    display: flex;
+    flex-direction: row;
+}
+
+.signIn {
+    margin-left: 20px;
+}
+
+.signIn h2 {
+    margin-bottom: 0;
+}
+
+.signIn a {
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.signInButton {
+    width: 98%;
+    height: 30px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: gold;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.signInButton:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.signUpButton {
+    width: 40%;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 0 2px black;
+    background-color: white;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.signUpButton:hover {
+    box-shadow: 0 0 10px black;
+}
+
+
+.rightContainer .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.rightContainer .product {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rightContainer .productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.productInfo p {
+    margin: 0;
+}
+
+.productInfo .productName {
+    font-size: 13px;
+    color: teal;
+}
+
+.productInfo .productPrice {
+    font-size: 15px;
+}
+
+.productInfo .addToCartButton {
+    width: 80px;
+    height: 25px;
+    background-color: gold;
+    border:none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.productImage {
+    width: 100px;
+}
+
+.productInfo .addToCartButton:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.alsoBuyContainer {
+    width: 100%;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.alsoBuyContainer {
+    margin: 0;
+    overflow: scroll;
+    max-width: 98vw;
+}
+
+.alsoBuyProductContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    padding: 20px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inspired {
+    border-top: 1px solid black;
+}
+
+button:active {
+    transform: translateY(5px);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerOne p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.headerTwo p {
+    color: #615b5b;
+    margin-right: 40px;
+}
+
+.cartContents {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.cartContents .productContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.productImageCartContainer {
+    width: 170px;
+    height: 200px;
+}
+
+.productImageCart {
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 10px;
+}
+
+.cartContents .productContainer .product {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    border-top: 1px solid grey;
+    padding:10px;
+    width: 94%;
+}
+
+.firstLine {
+    display: flex;
+    flex-direction: column;
+}
+
+.productNameCart {
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.productPriceCart {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.productPriceCart span {
+    font-size: 14px;
+    position: relative;
+    bottom: 5px;
+}
+
+.removeFromCartButton {
+    height: 30px;
+    width: 150px;
+    font-size: 14px;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.removeFromCartButton:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.removeFromCartButton:active {
+    transform: translateY(5px);
+}
+
+.ratingCart span {
+    font-size: 12px;
+    color: teal;
+    position: relative;
+    bottom: 5px;
+}
+
+.gift {
+    display: flex;
+    flex-direction: row;
+}
+
+.gift input {
+    width: 15px;
+}
+
+
+.giftText {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    font-size: 12px;
+}
+
+.giftText a {
+    position: relative;
+    left: 5px
+}
+
+.subTotal span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subTotalTitle span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.extraInfo {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.extraInfo a {
+    color: teal;
+}
+
+.checkoutButton {
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.checkoutButton:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.primePromotion > img {
+    height: 150px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.extraEmptyText {
+    margin-top: 30px;
+    background-color: gold;
+    border-radius: 10px;
+    padding: 10px
+}
+
+@media only screen and (min-width:200px) and (max-width: 700px) { 
+    .cartContainer {
+        flex-wrap: wrap;
+        width: 92%;
+    }
+
+    .emptyImage {
+        width: 0px;
+    }
+
+    .leftContainer {
+        margin: 20px;
+        margin-right: 10px;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+        box-shadow: 0 0 2px lightgray;
+        padding: 20px;
+        height: 500px;
+    }
+
+    .rightContainer {
+        width: 100%;
+    }
+
+    .productNameCart {
+        font-size: 12px;
+    }
+
+    .productPriceCart {
+        font-size: 14px;
+    }
+
+    .removeFromCartButton {
+        min-height: 25px;
+        width: 100px;
+        font-size: 10px;
+        background-color: gold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 5px
+    }
+
+    .ratingCart span {
+        font-size: 9px;
+        color: teal;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .productImageCart {
+        max-width: 50px;
+        max-height: 100px;
+        min-width: 50px;
+        margin-right: 10px;
+    }
+
+    .productImageCartContainer {
+        width: 60px;
+    }
+}

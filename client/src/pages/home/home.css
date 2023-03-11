@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(234, 237, 237);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    background-color: rgb(234, 237, 237);
+    position: relative;
+}
+
+.homeImage {
+    width: 100%;
+    height: 80vh;
+    z-index: -100;
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.homeRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width:200px) and (max-width: 1200px) {
+    .homeImage {
+        height: auto;
+    }
+    .home {
+        max-width: 100%;
+        align-items: center;
+    }
+    .homeRow {
+        flex-wrap: wrap;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .firstHomeRow {
+        margin-top: 20%;
+    }
+
+    .remove {
+        display: none;
+    }
+}

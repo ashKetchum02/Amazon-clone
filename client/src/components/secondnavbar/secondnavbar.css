@@ -1,0 +1,28 @@
+.secondNavbarContainer {
+    background-color: #232f3e;
+    color: white;
+    font-size: 14px;
+    padding-top: 0;
+    font-weight: 600;
+    margin: 0
+}
+
+.secondNavbarContainer > ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.secondNavbarContainer > ul li {
+    margin-left: 10px;
+}
+
+@media only screen and (min-width:200px) and (max-width: 1200px) {
+    .secondNavbarContainer {
+        display: none;
+    }
+}

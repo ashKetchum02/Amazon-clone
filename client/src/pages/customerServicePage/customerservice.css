@@ -1,0 +1,112 @@
+
+.customerServiceWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.customerServiceWrapper header {
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.customerServiceOptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.customerServiceCall {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid black;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 30px;
+}
+
+.customerServiceCall button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 30px;
+    padding: 10px;
+    font-weight: bolder;
+    background-color: #FEBD69;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.customerServiceCall button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.customerServiceChat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid black;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 30px;
+}
+
+.customerServiceChat button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 30px;
+    padding: 10px;
+    font-weight: bolder;
+    background-color: #FEBD69;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.customerServiceChat button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.customerServiceVideoCall {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid black;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 30px;
+}
+
+.customerServiceVideoCall button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 30px;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: #FEBD69;
+    border: 1px solid black;
+}
+
+.customerServiceVideoCall button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

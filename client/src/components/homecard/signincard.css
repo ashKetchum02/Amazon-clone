@@ -1,0 +1,49 @@
+.signInCardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 420px;
+    min-width: 200px;
+    margin: 10px;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.signInButton {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.signInButton > button {
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(253, 216, 9);
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.signInButton > button:active {
+    box-shadow: 0 0 10px black;
+    transform: translateY(5px);
+}
+
+.primeDayImage {
+    object-fit: contain;
+    width: 220px;
+    height: 200px;
+}
+
+.freeProduct {
+    display: flex;
+    justify-content: center;
+}

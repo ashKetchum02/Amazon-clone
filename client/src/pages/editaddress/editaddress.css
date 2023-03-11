@@ -1,0 +1,141 @@
+.addAddressWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.addAddressTitle {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.addAddressBox {
+    width: 40%;
+}
+
+.autofillLoc {
+    background-color:#50C4D9;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.autofillLoc > button {
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    background-color: rgb(209, 203, 203);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.addAddressCountry > div {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.addAddressCountry > select {
+    border-radius: 10px;
+    height: 34px;
+    font-size: 15px;
+    width: 100%;
+    background-color: white;
+}
+
+.addAddressFullName > div {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.addAddressFullName input {
+    border-radius: 6px;
+    height: 34px;
+    font-size: 15px;
+    border: 1px solid rgb(59, 58, 58);
+}
+
+.deliveryInstructions > div:nth-child(1) {
+    font-size: 16px;
+    font-weight: 650;
+    margin-top: 10px;
+}
+
+.deliveryInstructions > div:nth-child(2) {
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.addressType > div {
+    font-size: 14px;
+    font-weight: 650;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+.addressType > select {
+    border-radius: 10px;
+    height: 34px;
+    font-size: 15px;
+    width: 100%;
+    background-color: white;
+}
+
+.addAddressButton {
+    width: 18%;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 550;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #FCD200;
+    background-color: #FFD814;
+    cursor: pointer;
+}
+
+.addAddressButton:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.addAddressButton:active {
+    transform: translateY(5px);
+}
+
+.make {
+    margin-top: 20px;
+}
+
+.changeMobileNav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.changeMobileNavLink {
+    margin-left: 10px;
+    color: #0066c0;
+    cursor: pointer;
+}
+
+.changeMobileNavLink:hover {
+    text-decoration: underline;
+    color: #c45500!important;
+}
+
+.changeMobileNavLink:last-child {
+    color: #c45500!important;
+    cursor: initial;
+}
+
+.changeMobileNavLink:last-child:hover {
+    text-decoration: none;
+}
