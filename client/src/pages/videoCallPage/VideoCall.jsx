@@ -25,38 +25,52 @@ const Video = styled.video`
 `;
 
 function VideoCall() {
-  const [yourID, setYourID] = useState("");
-  const [users, setUsers] = useState({});
+  const [yourID, setYourID] = useState(""); 
+  const [users, setUsers] = useState([]);
   const [stream, setStream] = useState();
   const [receivingCall, setReceivingCall] = useState(false);
   const [caller, setCaller] = useState("");
   const [callerSignal, setCallerSignal] = useState();
   const [callAccepted, setCallAccepted] = useState(false);
 
+  const user = JSON.parse(localStorage.getItem("user"))
+
   const userVideo = useRef();
   const partnerVideo = useRef();
   const { socket } = useSocket();
 
   useEffect(() => {
+    if (!user.executive || user.executive == "0")
+            socket.emit("addUserForVideoCall", user._id);
+        else 
+            socket.emit("addExecutiveForVideoCall", user._id);
+  }, [])
+
+  useEffect(() => {
     navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then(stream => {
       setStream(stream);
-      if (userVideo.current) {
-        userVideo.current.srcObject = stream;
-      }
+      userVideo.current.srcObject = stream
     })
+  }, [])
+
+  useEffect(() => {
 
     socket.on("yourID", (id) => {
       setYourID(id);
     })
-    socket.on("allUsers", (users) => {
-      setUsers(users);
-    })
+
+      socket.on("getExecutivesForVideoCall", (users) => {
+        setUsers(users);
+        console.log(users)
+      })
 
     socket.on("hey", (data) => {
       setReceivingCall(true);
       setCaller(data.from);
       setCallerSignal(data.signal);
     })
+
+    socket.emit("getFreeExecutives")
   }, []);
 
   function callPeer(id) {
@@ -119,14 +133,15 @@ function VideoCall() {
   let UserVideo;
   if (stream) {
     UserVideo = (
-      <Video playsInline muted ref={userVideo} autoPlay />
+      // <Video playsInline muted ref={userVideo} autoPlay />
+      <video ref={userVideo} muted autoPlay playsInline></video>
     );
   }
 
   let PartnerVideo;
   if (callAccepted) {
     PartnerVideo = (
-      <Video playsInline ref={partnerVideo} autoPlay />
+      <video ref={partnerVideo} autoPlay playsInline></video>
     );
   }
 
@@ -142,16 +157,13 @@ function VideoCall() {
   return (
     <Container>
       <Row>
-        {UserVideo}
+        <video ref={userVideo} muted autoPlay playsInline></video>
         {PartnerVideo}
       </Row>
       <Row>
-        {Object.keys(users).map(key => {
-          if (key === yourID) {
-            return null;
-          }
+        {users && Array.isArray(users) && users.map(user => {
           return (
-            <button onClick={() => callPeer(key)}>Call {key}</button>
+            <button key={user.socketId} onClick={() => callPeer(user.socketId)}>Call {user.socketId}</button>
           );
         })}
       </Row>
@@ -161,5 +173,6 @@ function VideoCall() {
     </Container>
   );
 }
+
 
 export default VideoCall;

@@ -10,7 +10,7 @@ export const useSocket = () => {
 }
 
 export const SocketProvider = (props) => {
-    const socket = io("http://localhost:8000")
+    const socket = io("http://localhost:8900")
     return (
         <SocketContext.Provider value={{socket}}>
             {props.children}
